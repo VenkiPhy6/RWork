@@ -55,3 +55,4 @@ methods(class = 'matrix')
 plot(1:10)
 #Clean console by Ctrl+L
 #Run all the commands in the script
+source("test1.R")
