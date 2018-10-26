@@ -1,0 +1,5 @@
+dir('./data2')
+list.files('./data2')
+file.exists('./data2')
+file.exists('./data3')
+file.exists('./data2/mtcars.csv')
