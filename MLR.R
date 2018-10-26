@@ -28,6 +28,7 @@ omni = omni1
 head(omni)
 str(omni)
 nrow(omni)
+table(promotion)
 #MLR  Create Multiple Linear Regression
 # we want to see how Sales Qty depend on Price and Promotion Values
 fit2 = lm(sales ~ price + promotion, data=omni)
