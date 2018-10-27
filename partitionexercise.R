@@ -1,13 +1,33 @@
+<<<<<<< HEAD
 #Partitioning data class exercise
 
 #Vector-----
 studentname = paste('Student', 1:10000, sep='-')
 studentname
 pos <- sample(length(studentname), size = length(studentname)*60/100)
+=======
+#Parttioning data
+
+#A First attempt
+data_vec <- seq(1,1000, by =3)
+data_vec
+?sample
+pos <- sample(length(data_vec), size=350, replace = T)
+first_partition <- data_vec[pos]
+second_partition <- data_vec[-pos]
+first_partition
+second_partition
+
+#Class exercise
+studentname = paste('Student', 1:10000, sep='-')
+studentname
+pos <- sample(length(studentname), size = 60*length(studentname)/100)
+>>>>>>> ecd071083a9ac2b063c211d8ccd392bd1562cd02
 group1 = studentname[pos]
 group2 = studentname[-pos]
 group1
 group2
+<<<<<<< HEAD
 length(setdiff(group2, group1))
 
 #Data frame----
@@ -56,3 +76,5 @@ prop.table(table(train$gender))
 prop.table(table(test$gender))
 
 #THE BIG INTERESTING POINT - EVEN WITHOUT USING CARET PACKAGE I AM ENDING UP WITH SAME PROPORTION OF MALE AND FEMALES IN MY TRAIN AND TEST SETS. HOW IS THIS POSSIBLE?! 
+=======
+>>>>>>> ecd071083a9ac2b063c211d8ccd392bd1562cd02
